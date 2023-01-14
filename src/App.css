@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/low-poly-grid-haikei.png);
+    animation: movimiento 100s infinite linear alternate-reverse;
+}
+@keyframes movimiento{
+    from{
+      background-position: bottom left;
+    }
+  }
+.App{
+    width: 100%;
+    background: rgb(0, 0, 0, .5);
+    
+}
+img{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    min-height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    border-radius: 10px;
+}
+.caja{
+    padding: 10px;
+    
+    
+}
+.caja h2{
+    border-bottom: 2px solid rgb(5, 5, 5);
+    color: aliceblue;
+    
+}
+/*butom*/
+/*caja3*/
+.Dead{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    margin: 8px;
+    float: right;
+}
+.Alive{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 255, 115);
+    margin: 8px;
+    float: right;
+}
+.unknown{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(9, 45, 252);
+    margin: 8px;
+    float: right;
+}
+.grid-container {
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)) ;
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.estado{
+    position: relative;
+}
+.grid-item b{
+    color: rgb(179, 204, 196);
+font-size: 17px;
+margin-right: 0px;
+}
+.grid-item h3{
+    font-size: 17px;
+}
+/*background: rgb(17, 138, 138);*/
+.grid-item{
+    
+    background-color: rgba(17, 138, 138, 0.59);
+    box-shadow:  rgba(6, 10, 65, 0.5);
+    padding: 18px;
+    border-radius: 10px;
+    color: aliceblue;
+    
+}
+form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.caja1{
+    background: rgba(0, 0, 0, .5);
+    
+}
+.grid-item:hover{
+    filter: opacity(.9);
+    transform: scale(1.04);
+}
+.caja{
+    background: rgba(0, 0, 0, .8);
+    
+}
+.caja b{
+    color: rgb(179, 204, 196);
+    font-size: 25px;
+    
+}
+.caja h2{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: none;
+}
+.search-box{
+
+}
+.btn-search{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 2px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background-color: rgba(17, 138, 138, 0.59);
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 4.6px;
+}
+input{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    height: 35px;
+}
